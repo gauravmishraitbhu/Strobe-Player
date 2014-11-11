@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smil title="SMIL file for live streaming">
+
+
+        <head>
+                <meta base="rtmp://[EDGE_SERVER]/Edge-1/_definst_"/>
+        </head>
+
+        <body>
+               <switch>
+                
+              
+	                <video src="mp4:myStream_360p" system-bitrate="534000" width="480" height="360">
+	                        <param name="audioBitrate" value="64000" valuetype="data"/>
+	                        <param name="videoBitrate" value="470000" valuetype="data"/>
+	                        <param name="videoCodecId" value="avc1.66.21" valuetype="data"/>
+	                        <param name="audioCodecId" value="mp4a.40.2" valuetype="data"/>
+	                </video>
+	                <video src="mp4:myStream_240p" system-bitrate="272000" width="480" height="360">
+	                        <param name="audioBitrate" value="32000" valuetype="data"/>
+	                        <param name="videoBitrate" value="240000" valuetype="data"/>
+	                        <param name="videoCodecId" value="avc1.66.21" valuetype="data"/>
+	                        <param name="audioCodecId" value="mp4a.40.2" valuetype="data"/>
+	                </video>
+	                <video src="mp4:myStream_160p" system-bitrate="136000" width="480" height="360">
+	                        <param name="audioBitrate" value="16000" valuetype="data"/>
+	                        <param name="videoBitrate" value="120000" valuetype="data"/>
+	                        <param name="videoCodecId" value="avc1.66.21" valuetype="data"/>
+	                        <param name="audioCodecId" value="mp4a.40.2" valuetype="data"/>
+	                </video>
+        </switch>
+
+        </body>
+</smil>
